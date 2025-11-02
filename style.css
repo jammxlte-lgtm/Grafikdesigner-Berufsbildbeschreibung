@@ -1,0 +1,233 @@
+
+.logo {
+  width: 120px;
+  height: auto;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #ebebeb;
+  margin: 0;
+  padding: 0;
+}
+
+.paperbackground {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.obenrechts {
+  position: absolute;
+  top: -90px;
+  right: 0;
+  padding: 100px;
+  margin: 10px;
+  display: flex;
+  gap: 14px;
+  align-items: center; 
+  font-size: 15px;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+.textstyle {
+  color: black;
+  text-decoration: none;
+}
+
+.headline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 230%;
+}
+
+.bewerbungzumgrafikdesigner {
+  font-family: Helvetica;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hier {
+  color: rgb(156, 0, 255);
+  text-decoration: none;
+}
+
+.headlineimage {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.fragen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #8f8f8f;
+}
+
+.haken {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  gap: 110px;
+}
+
+.detallierteuebersicht {
+  font-family: helvetica;
+  font-size: 16px;
+}
+
+.miniheadline {
+  font-family: helvetica;
+  font-size: 20px;
+}
+
+.graphicsdesignerdoingstuff {
+  font-family: helvetica;
+  font-size: 15px;
+  margin-right: 300px;
+}
+
+.graphicsdesignerdoingstuffheadline {
+  font-family: helvetica;
+  font-size: 15px;
+  margin-right: 300px;
+  font-weight: bold;
+  display: flex;
+}
+
+.tick {
+  margin-top: 9px;
+  width: 30px;
+  height: 30px;
+}
+
+.graphicsdesignerdoingstuffticks {
+  display: flex;
+  font-family: helvetica;
+  gap: 10px;
+}
+
+.bilddaneben {
+  display: flex;
+  position: absolute;
+  height: 210px;
+  width: auto;
+  margin-left: 560px;
+  margin-top: -220px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.padding {
+  padding: 20px;
+}
+.schriftarttabelle {
+  font-family: helvetica;
+}
+
+.tabelle {
+    border-collapse: separate;
+  border-spacing: 50px 0;
+
+}
+
+
+@media (max-width: 1024px) {
+  .paperbackground,
+  .center {
+    padding: 0 40px;
+  }
+
+  .obenrechts {
+    padding: 40px;
+    top: -40px;
+    font-size: 14px;
+  }
+
+  .graphicsdesignerdoingstuff,
+  .graphicsdesignerdoingstuffheadline {
+    margin-right: 100px;
+  }
+
+  .bilddaneben {
+    margin-left: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .paperbackground,
+  .center {
+    padding: 0 20px;
+  }
+
+  .headline {
+    font-size: 180%;
+    text-align: center;
+  }
+
+  .obenrechts {
+    position: static;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto 20px;
+  }
+
+  .headlineimage {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .fragen {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .graphicsdesignerdoingstuff,
+  .graphicsdesignerdoingstuffheadline {
+    margin-right: 0;
+  }
+
+  .bilddaneben {
+    position: static;
+    margin: 20px auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline {
+    font-size: 150%;
+  }
+
+  .obenrechts {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .paperbackground,
+  .center {
+    padding: 0 10px;
+  }
+
+  .graphicsdesignerdoingstuff {
+    font-size: 14px;
+  }
+}
